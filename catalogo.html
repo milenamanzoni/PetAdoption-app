@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <header class="header">
+            <nav class="navbar-home flex-row-reverse">
+                <div class="container-fluid navegador" id="header-container">
+                    <a class="navbar-logo" href="Home.html" id="logo"> <img src="https://i.ibb.co/QQmKXZp/LOGO.png"
+                            alt="PETadoption"></a>
+                    <a class="navbar-brand" href="catalogo.html">ADOPTA </a>
+                    <a class="navbar-brand" href="darenadopcion.html">DAR EN ADOPCION </a>
+                    <a class="navbar-brand" href="#">SOBRE NOSOTROS </a>
+            </nav>
+        </header>
+
+
+        <section class="buscador">
+            <div class="container-fluid b-cat">
+                <div class="row">
+                    <div class="col">
+                        <select class="form-control">
+                            <option>Perro</option>
+                            <option>Gato</option>
+                            <option>Otros</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" placeholder="Ingrese caracteristicas" name="Caracterisicas"
+                            class="form-control">
+                    </div>
+                    <div class="col">
+                        <select class="form-control">
+                            <option>Raza</option>
+                            <option>Sexo</option>
+                            <option>Edad</option>
+                            <option>Barrio</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-success">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://i.ibb.co/kJCkwTY/perro-1.jpg" class="card-img-top" alt="Fafi">
+                    <div class="card-body">
+                        <h1 class="card-title">Fafi</h1>
+                        <h4 class="card-text">Macho, 2 años, pelaje rubio</h4>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#fafi">+
+                            Info</button>
+                        <h6 class="card-text"><small class="text-muted">Centro, Montevideo</small></h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="https://i.ibb.co/w0JjfC0/perro-3.jpg" class="card-img-top" alt="Pancho">
+                    <div class="card-body">
+                        <h1 class="card-title">Pancho</h1>
+                        <h4 class="card-text">Macho, 6 meses, pelaje combinado</h4>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pancho">+
+                            Info</button>
+                        <h6 class="card-text"><small class="text-muted">Colon, Montevideo</small></h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="https://i.ibb.co/DWDwPwH/perro-2.jpg" class="card-img-top" alt="Lara">
+                    <div class="card-body">
+                        <h1 class="card-title">Lara</h1>
+                        <h4 class="card-text">Hembra, 1 año, pelaje blanco</h4>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#lara">+
+                            Info</button>
+                        <h6 class="card-text"><small class="text-muted">Pocitos, Montevideo</small></h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="https://i.ibb.co/6vLbRk1/gato-1.jpg" class="card-img-top" alt="Yuumi">
+                    <div class="card-body">
+                        <h1 class="card-title">Yuumi</h1>
+                        <h4 class="card-text">Hembra, 4 años, pelaje combinado</h4>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#yuumi">+
+                            Info</button>
+                        <h6 class="card-text"><small class="text-muted">Las piedras, Canelones</small></h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="https://i.ibb.co/1ZXm1ny/gato-3.jpg" class="card-img-top" alt="Gnar">
+                    <div class="card-body">
+                        <h1 class="card-title">Gnar</h1>
+                        <h4 class="card-text">Macho, 6 meses, pelaje amarillo</h4>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#gnar">+
+                            Info</button>
+                        <h6 class="card-text"><small class="text-muted">Cordon, Montevideo</small></h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="https://i.ibb.co/Ct7zHJr/hamster-1.jpg" class="card-img-top" alt="Pinky">
+                    <div class="card-body">
+                        <h1 class="card-title">Pinky</h1>
+                        <h4 class="card-text">Hembra, 1 mes, pelaje amarillo y blanco</h4>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pinky">+
+                            Info</button>
+                        <h6 class="card-text"><small class="text-muted">Cordon, Montevideo</small></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODALES PARA ADOPCION -->
+            <div class="modal fade" id="fafi" tabindex="-1" role="dialog" aria-labelledby="fafiLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="fafiLabel">Adoptar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5> Fafi es un perrito muy lindo y amigable.</h5>
+                            <ul>
+                                <li>Tipo:Perro</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Edad: 2 años</li>
+                                <li>Sexo: Macho</li>
+                                <li>Color de pelo y ojos: Pelaje rubio, ojos marrones</li>
+                            </ul>
+                            <h6>Datos del contacto: <br> Carlos Lopez: 099999999</h6>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="pancho" tabindex="-1" role="dialog" aria-labelledby="panchoLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="panchoLabel">Adoptar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5> Pancho es amigable con los niños.</h5>
+                            <ul>
+                                <li>Tipo: Perro</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Edad: 6 meses</li>
+                                <li>Sexo: Macho</li>
+                                <li>Color de pelo y ojos: Pelaje combinado, ojos marrones</li>
+                            </ul>
+                            <h6>Datos del contacto: <br> Carlos Lopez: 099999999</h6>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="lara" tabindex="-1" role="dialog" aria-labelledby="laraLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="laraLabel">Adoptar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5> Lara es una perrita con mucha energia</h5>
+                            <ul>
+                                <li>Tipo: Perro</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Edad: 1 año</li>
+                                <li>Sexo: Hembra</li>
+                                <li>Color de pelo y ojos: Pelaje blanco, ojos marrones</li>
+                            </ul>
+                            <h6>Datos del contacto: <br> Carlos Lopez: 099999999</h6>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="yuumi" tabindex="-1" role="dialog" aria-labelledby="yuumiLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="yuumiLabel">Adoptar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Yuumi es una gatita a la cual le gusta el aire libre</h5>
+                            <ul>
+                                <li>Tipo: Gato</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Edad: 4 años</li>
+                                <li>Sexo: Hembra</li>
+                                <li>Color de pelo y ojos: Pelaje combinado, ojos marrones</li>
+                            </ul>
+                            <h6>Datos del contacto: <br> Carlos Lopez: 099999999</h6>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gnar" tabindex="-1" role="dialog" aria-labelledby="gnarLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="gnarLabel">Adoptar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Gnar es un gatito muy parecido a Garfield!</h5>
+                            <ul>
+                                <li>Tipo: Gato</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Edad: 6 meses</li>
+                                <li>Sexo: Macho</li>
+                                <li>Color de pelo y ojos: Pelaje combinado, ojos marrones</li>
+                            </ul>
+                            <h6>Datos del contacto: <br> Carlos Lopez: 099999999</h6>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="pinky" tabindex="-1" role="dialog" aria-labelledby="pinkyLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pinkyLabel">Adoptar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Nuestro roedor preferido!</h5>
+                            <ul>
+                                <li>Raza: Hamster</li>
+                                <li>Edad: 1 mes</li>
+                                <li>Sexo: Hembra</li>
+                                <li>Color de pelo y ojos: Pelaje combinado, ojos marrones</li>
+                            </ul>
+                            <h6>Datos del contacto: <br> Carlos Lopez: 099999999</h6>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">Adoptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation ">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
